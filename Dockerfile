@@ -12,9 +12,9 @@ RUN npm ci
 # ソースコードをコピー
 COPY . .
 
-# ビルド時の環境変数（ビルド時に上書き可能）
-ARG VITE_API_URL=/api
-ARG VITE_TURNSTILE_SITE_KEY=
+# ビルド時の環境変数
+ARG VITE_API_URL=https://wao-api.centraworks.net
+ARG VITE_TURNSTILE_SITE_KEY=0x4AAAAAACDfp-3aa3KQ0l-7
 ENV VITE_API_URL=$VITE_API_URL
 ENV VITE_TURNSTILE_SITE_KEY=$VITE_TURNSTILE_SITE_KEY
 
