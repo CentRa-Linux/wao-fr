@@ -1,0 +1,23 @@
+# 依存関係
+node_modules/
+
+# ビルド成果物
+dist/
+
+# 環境変数
+.env
+.env.local
+.env.*.local
+
+# テスト
+test-results/
+playwright-report/
+tests/
+
+# 開発用
+.claude/
+*.log
+
+# Git
+.git/
+.gitignore
