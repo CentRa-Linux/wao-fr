@@ -97,7 +97,7 @@ export function SignInPage() {
                       type="button"
                       onClick={handleResendVerification}
                       disabled={resendLoading || !email}
-                      className="text-xs text-primary hover:underline disabled:opacity-50"
+                      className="text-xs text-primary hover:underline disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer py-1 px-2 -ml-2 rounded"
                     >
                       {resendLoading ? "送信中..." : "認証メールを再送信する"}
                     </button>
