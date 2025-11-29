@@ -114,6 +114,8 @@ export function SignInPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  onInput={(e) => setEmail((e.target as HTMLInputElement).value)}
+                  onBlur={(e) => setEmail(e.target.value)}
                   required
                   autoComplete="email"
                   className="w-full px-3 py-2 rounded-md border border-border bg-background/60 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/60"
