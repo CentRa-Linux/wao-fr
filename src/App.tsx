@@ -93,11 +93,7 @@ function App() {
         />
         <Route
           path="/signup"
-          element={
-            <PublicRoute>
-              <SignUpPage />
-            </PublicRoute>
-          }
+          element={<SignUpPage />}
         />
 
         <Route
