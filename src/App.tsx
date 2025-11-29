@@ -4,6 +4,7 @@ import { useAuthStore } from "@/stores/authStore";
 import { Layout } from "@/components/layout/Layout";
 import { SignInPage } from "@/pages/SignIn";
 import { SignUpPage } from "@/pages/SignUp";
+import { VerifyEmailPage } from "@/pages/VerifyEmail";
 import { TimelinePage } from "@/pages/Timeline";
 import { ProfilePage } from "@/pages/Profile";
 import { NotificationsPage } from "@/pages/Notifications";
@@ -94,6 +95,10 @@ function App() {
         <Route
           path="/signup"
           element={<SignUpPage />}
+        />
+        <Route
+          path="/verify-email"
+          element={<VerifyEmailPage />}
         />
 
         <Route

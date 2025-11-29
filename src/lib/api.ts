@@ -164,6 +164,10 @@ class ApiClient {
     });
   }
 
+  async verifyEmail(token: string): Promise<{ message: string }> {
+    return this.request<{ message: string }>(`/auth/verify-email?token=${encodeURIComponent(token)}`);
+  }
+
   // ============ User Profile ============
 
   async getMe(): Promise<User> {
